@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -20,33 +20,73 @@
             <h1 class="logo">Instagram</h1>
 
             <!-- ログインフォーム -->
-            <form>
+            <form class="login-form" action="/login" method="POST">
 
-                <input
-                    type="text"　name="email"
-                    placeholder="電話番号、ユーザーネーム、メールアドレス"
-                    required
+                <div class="form-group">
+
+                    <label>
+                        メールアドレスまたは電話番号
+                        <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        name="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        パスワード
+                        <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="password"
+                        name="password"
+                        required
+                    >
+
+                    <a
+                        class="forgot-password"
+                        href="https://www.instagram.com/accounts/password/reset/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        パスワードをお忘れですか？
+                    </a>
+
+                </div>
+
+
+                <!-- フォームを送信するボタン -->
+                <button
+                    type="submit"
+                    class="login-button"
                 >
-
-                <input
-                    type="password" name="password"
-                    placeholder="パスワード"
-                    required
-                >
-
-                <!-- 今回は入力内容を処理しない -->
-                <button type="submit" class="login-button">ログイン</button>
+                    ログイン
+                </button>
 
             </form>
 
+
             <!-- 区切り -->
             <div class="divider">
+
                 <span></span>
+
                 <p>または</p>
+
                 <span></span>
+
             </div>
 
-            <!-- 外部ログイン -->
+
+            <!-- Facebookログイン -->
             <a
                 class="facebook-login"
                 href="https://www.facebook.com/"
@@ -56,15 +96,6 @@
                 Facebookでログイン
             </a>
 
-            <!-- パスワード再設定 -->
-            <a
-                class="forgot-password"
-                href="https://www.instagram.com/accounts/password/reset/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                パスワードを忘れた場合
-            </a>
 
         </section>
 
@@ -74,6 +105,7 @@
 
             <p>
                 アカウントをお持ちでないですか？
+
                 <a
                     href="https://www.instagram.com/accounts/emailsignup/"
                     target="_blank"
@@ -90,6 +122,7 @@
         <p class="app-text">
             アプリをダウンロード
         </p>
+
 
         <div class="app-buttons">
 
@@ -116,11 +149,13 @@
 
     <!-- フッター -->
     <footer>
+
         <p>
-            © 2026 Instagram風ログインページ
+            © 2026 Instagramログインページ
         </p>
+
     </footer>
 
 </body>
 </html>
-
+```
