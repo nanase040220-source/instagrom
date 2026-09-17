@@ -1,0 +1,373 @@
+
+/* =========================
+   基本設定
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #fafafa;
+    color: #262626;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   メイン
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 400px;
+
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+/* =========================
+   ログインカード
+========================= */
+
+.login-card {
+    background: #ffffff;
+
+    border: 1px solid #dbdbdb;
+    border-radius: 14px;
+
+    padding: 42px 40px 32px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   ロゴ
+========================= */
+
+.logo {
+    font-family:
+        "Segoe Script",
+        "Brush Script MT",
+        cursive;
+
+    font-size: 42px;
+    font-weight: 600;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 36px;
+}
+
+
+/* =========================
+   入力フォーム
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    height: 44px;
+
+    padding: 0 13px;
+
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+
+    background: #fafafa;
+
+    color: #262626;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s,
+        background 0.2s;
+}
+
+
+/* 入力欄をクリックしたとき */
+
+input:focus {
+    border-color: #999999;
+
+    background: #ffffff;
+}
+
+
+/* プレースホルダー */
+
+input::placeholder {
+    color: #8e8e8e;
+}
+
+
+/* =========================
+   ログインボタン
+========================= */
+
+button {
+    width: 100%;
+    height: 42px;
+
+    margin-top: 6px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #0095f6;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s,
+        transform 0.1s;
+}
+
+
+/* マウスを乗せたとき */
+
+button:hover {
+    background: #1877f2;
+}
+
+
+/* クリックしたとき */
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   区切り線
+========================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 28px 0;
+}
+
+.divider span {
+    height: 1px;
+
+    flex: 1;
+
+    background: #dbdbdb;
+}
+
+.divider p {
+    color: #8e8e8e;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   Facebookログイン
+========================= */
+
+.facebook-login {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #385185;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.facebook-login:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   パスワードを忘れた場合
+========================= */
+
+.forgot-password {
+    display: block;
+
+    color: #00376b;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   登録カード
+========================= */
+
+.signup-card {
+    margin-top: 12px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #dbdbdb;
+    border-radius: 14px;
+
+    text-align: center;
+}
+
+.signup-card p {
+    font-size: 13px;
+}
+
+.signup-card a {
+    color: #0095f6;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.signup-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   アプリダウンロード
+========================= */
+
+.app-text {
+    margin: 28px 0 16px;
+
+    text-align: center;
+
+    font-size: 13px;
+}
+
+.app-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.app-buttons a {
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    background: #000000;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: opacity 0.2s;
+}
+
+.app-buttons a:hover {
+    opacity: 0.75;
+}
+
+
+/* =========================
+   フッター
+========================= */
+
+footer {
+    padding: 20px;
+
+    text-align: center;
+
+    color: #8e8e8e;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   スマートフォン対応
+========================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 20px 16px;
+    }
+
+    .login-card {
+        padding: 35px 10px 25px;
+
+        border: none;
+        border-radius: 0;
+    }
+
+    .signup-card {
+        border-left: none;
+        border-right: none;
+
+        border-radius: 0;
+    }
+
+    .logo {
+        font-size: 38px;
+    }
+
+    .app-buttons {
+        gap: 6px;
+    }
+
+    .app-buttons a {
+        padding: 9px 14px;
+    }
+}
+
